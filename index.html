@@ -5,20 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Revanth Kumar K | Accountant Portfolio</title>
   <meta name="description" content="Portfolio of Revanth Kumar K - Accountant skilled in Tally Prime, GST, bank reconciliation and Excel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- NAVBAR -->
   <header class="navbar" id="navbar">
-    <a href="#home" class="logo">Revanth<span>.</span></a>
+    <a href="#home" class="logo">RK<span>.</span></a>
     <nav id="nav-menu" class="nav-menu">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
+      <a href="#projects">Work</a>
       <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
     </nav>
     <div class="nav-actions">
       <button id="theme-toggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
@@ -29,91 +32,124 @@
   <main>
     <!-- HERO -->
     <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-text reveal">
-          <p class="eyebrow">Hello, I'm</p>
-          <h1>Revanth Kumar K</h1>
-          <h2 class="role">I'm an <span id="typing"></span><span class="cursor">|</span></h2>
+      <div class="wrap">
+        <div class="hero-meta reveal">
+          <span class="mono"><i class="live"></i> Available for accountant roles</span>
+          <span class="mono">Nellore, India</span>
+        </div>
+
+        <h1 class="mega reveal">
+          <span class="w1">BOOKS</span>
+          <span class="monogram" aria-hidden="true"><b>R</b><b>K</b></span>
+          <span class="w2">BALANCE</span>
+        </h1>
+
+        <div class="hero-sub reveal">
+          <p class="role">Revanth Kumar K, an <span id="typing"></span><span class="cursor">|</span></p>
           <p class="lead">
-            Accountant with hands-on experience in bookkeeping, GST &amp; professional tax filing,
-            and bank reconciliation for multiple companies using Tally Prime and Excel.
+            Accountant managing the books of multiple companies in Tally Prime: bank reconciliation,
+            GST and professional tax filing, GSTR-2B matching and stock statements.
           </p>
           <div class="hero-btns">
-            <a href="#contact" class="btn primary">Hire Me</a>
-            <a href="#experience" class="btn outline">View Experience</a>
-          </div>
-          <div class="hero-stats">
-            <div><strong>1+</strong><span>Year Experience</span></div>
-            <div><strong>Multi</strong><span>Company Books</span></div>
-            <div><strong>B.Tech</strong><span>Graduate</span></div>
+            <a href="mailto:krevanth770@gmail.com" class="pill dark">krevanth770@gmail.com →</a>
+            <a href="#projects" class="pill ghost">See my work</a>
           </div>
         </div>
-        <div class="hero-visual reveal">
-          <div class="avatar">
-            <span>RK</span>
+
+        <!-- Ledger panel (decorative illustration) -->
+        <div class="ledger reveal" aria-label="Illustration of a sample ledger">
+          <div class="ledger-bar">
+            <i></i><i></i><i></i>
+            <span class="mono">sample-ledger.tally</span>
+            <span class="mono tag">illustration</span>
           </div>
-          <div class="float-card c1">📊 Tally Prime</div>
-          <div class="float-card c2">🧾 GST Filing</div>
-          <div class="float-card c3">🏦 Reconciliation</div>
+          <div class="ledger-body mono">
+            <div class="row head"><span>Date</span><span>Particulars</span><span class="num">Dr</span><span class="num">Cr</span></div>
+            <div class="row"><span>01-Apr</span><span>Sales A/c</span><span class="num">—</span><span class="num">1,00,000</span></div>
+            <div class="row"><span>01-Apr</span><span>Output GST</span><span class="num">—</span><span class="num">18,000</span></div>
+            <div class="row"><span>02-Apr</span><span>Bank A/c</span><span class="num">1,18,000</span><span class="num">—</span></div>
+            <div class="row total"><span></span><span>Trial balance</span><span class="num">1,18,000</span><span class="num">1,18,000</span></div>
+            <div class="ok">Dr = Cr ✔ books balance</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools strip -->
+      <div class="strip" aria-hidden="true">
+        <div class="strip-track">
+          <span>Tally Prime</span><span>GST Filing</span><span>Bank Reconciliation</span><span>GSTR-2B</span><span>Professional Tax</span><span>MS Excel</span><span>Stock Statements</span>
+          <span>Tally Prime</span><span>GST Filing</span><span>Bank Reconciliation</span><span>GSTR-2B</span><span>Professional Tax</span><span>MS Excel</span><span>Stock Statements</span>
         </div>
       </div>
     </section>
 
-    <!-- ABOUT -->
+    <!-- ABOUT + STATS -->
     <section class="section" id="about">
-      <div class="container">
-        <h3 class="section-title reveal">About Me</h3>
+      <div class="wrap">
+        <p class="eyebrow mono reveal">( 01 ) About</p>
         <div class="about-grid">
+          <h2 class="big reveal">Accountant by profession, <em>engineer by training.</em></h2>
           <div class="about-text reveal">
             <p>
-              I am an accountant working since September 2025, managing the books of multiple companies
-              in a local auditor's office in Nellore, Andhra Pradesh. My daily work covers sales and purchase
-              entries, bank reconciliation, GST returns, GSTR-2B matching, professional tax filing and stock statements.
+              I have worked since September 2025 in a local auditor's office in Nellore, Andhra Pradesh,
+              handling sales and purchase entries, bank reconciliation, GST returns, GSTR-2B matching,
+              professional tax filing and stock statements for several companies.
             </p>
             <p>
-              I also hold a B.Tech degree in Electronics &amp; Communication Engineering, which gives me a strong
-              analytical mindset and the ability to pick up new software and automation tools quickly.
-              I am looking for an accountant position where I can grow and add value to the team.
+              My B.Tech in Electronics &amp; Communication Engineering gives me an analytical mindset and the
+              ability to pick up new software and automation tools quickly. I built my own Tally automation
+              app, Ravan, to prove it.
             </p>
-            <a class="btn primary small" href="#contact">Let's Talk</a>
+            <ul class="facts mono">
+              <li><b>Languages</b><span>Telugu, English, Tamil (understand)</span></li>
+              <li><b>Passport</b><span>Available</span></li>
+              <li><b>Phone</b><span><a href="tel:+918790223061">+91 87902 23061</a></span></li>
+              <li><b>Email</b><span><a href="mailto:krevanth770@gmail.com">krevanth770@gmail.com</a></span></li>
+            </ul>
           </div>
-          <ul class="info-list reveal">
-            <li><b>Name</b><span>Revanth Kumar K</span></li>
-            <li><b>Location</b><span>Nellore, Andhra Pradesh, India</span></li>
-            <li><b>Languages</b><span>Telugu, English, Tamil (understand)</span></li>
-            <li><b>Passport</b><span>Available</span></li>
-            <li><b>Email</b><span><a href="mailto:krevanth770@gmail.com">krevanth770@gmail.com</a></span></li>
-            <li><b>Phone</b><span><a href="tel:+918790223061">+91 87902 23061</a></span></li>
-          </ul>
+        </div>
+
+        <div class="stats">
+          <div class="stat light reveal">
+            <strong>1+</strong>
+            <span>Years of experience in an<br />auditor's office</span>
+          </div>
+          <div class="stat dark reveal">
+            <strong>Multi</strong>
+            <span>company books maintained<br />in Tally Prime</span>
+          </div>
+          <div class="stat accent reveal">
+            <strong>B.Tech</strong>
+            <span>Electronics &amp;<br />Communication Engg.</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="section alt" id="skills">
-      <div class="container">
-        <h3 class="section-title reveal">Skills</h3>
-        <div class="cards-3">
-          <article class="card reveal">
-            <div class="card-icon">📒</div>
-            <h4>Accounting</h4>
-            <div class="chips">
-              <span>Tally Prime</span><span>Bank Reconciliation</span><span>Sales &amp; Purchase Entries</span><span>Stock Statement</span><span>Books of Accounts</span>
-            </div>
+    <!-- SKILLS (service-style rows) -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <p class="eyebrow mono reveal">( 02 ) Skills</p>
+        <h2 class="big reveal">What I do <em>every day.</em></h2>
+
+        <div class="rows">
+          <article class="srow reveal">
+            <span class="num mono">01</span>
+            <h3>Accounting</h3>
+            <p>Complete books of accounts for multiple companies, from daily entries to month-end reconciliation.</p>
+            <div class="chips"><span>Tally Prime</span><span>Bank Reconciliation</span><span>Sales &amp; Purchase</span><span>Stock Statement</span></div>
           </article>
-          <article class="card reveal">
-            <div class="card-icon">🧾</div>
-            <h4>Taxation</h4>
-            <div class="chips">
-              <span>GST Filing</span><span>GSTR-2B Matching</span><span>Professional Tax</span>
-            </div>
+          <article class="srow reveal">
+            <span class="num mono">02</span>
+            <h3>Taxation</h3>
+            <p>On-time statutory filings and return matching so that client records agree with the government portal.</p>
+            <div class="chips"><span>GST Filing</span><span>GSTR-2B Matching</span><span>Professional Tax</span></div>
           </article>
-          <article class="card reveal">
-            <div class="card-icon">💻</div>
-            <h4>Technical</h4>
-            <div class="chips">
-              <span>MS Excel</span><span>Java</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Testing</span>
-            </div>
+          <article class="srow reveal">
+            <span class="num mono">03</span>
+            <h3>Technical</h3>
+            <p>Spreadsheet power plus programming basics, used to automate repetitive accounting work.</p>
+            <div class="chips"><span>MS Excel</span><span>Java</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Testing</span></div>
           </article>
         </div>
       </div>
@@ -121,79 +157,80 @@
 
     <!-- EXPERIENCE -->
     <section class="section" id="experience">
-      <div class="container">
-        <h3 class="section-title reveal">Experience</h3>
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <span class="dot"></span>
-            <div class="timeline-card">
-              <span class="date">Sept 2025 – Present</span>
-              <h4>Accountant</h4>
+      <div class="wrap">
+        <p class="eyebrow mono reveal">( 03 ) Experience</p>
+        <h2 class="big reveal">Where I <em>work.</em></h2>
+
+        <article class="job reveal">
+          <div class="job-head">
+            <div>
+              <h3>Accountant</h3>
               <p class="muted">Local Auditor's Office, Nellore</p>
-              <ul>
-                <li>Maintain books of accounts for multiple companies in Tally Prime.</li>
-                <li>Perform monthly bank reconciliation and record sales and purchase entries.</li>
-                <li>File GST returns, match GSTR-2B and file professional tax.</li>
-                <li>Prepare stock statements for clients.</li>
-              </ul>
             </div>
+            <span class="pill ghost small mono">Sept 2025 – Present</span>
           </div>
-        </div>
+          <ul class="ticks">
+            <li>Maintain books of accounts for multiple companies in Tally Prime.</li>
+            <li>Perform monthly bank reconciliation and record sales and purchase entries.</li>
+            <li>File GST returns, match GSTR-2B and file professional tax.</li>
+            <li>Prepare stock statements for clients.</li>
+          </ul>
+        </article>
       </div>
     </section>
 
     <!-- PROJECTS -->
-    <section class="section alt" id="projects">
-      <div class="container">
-        <h3 class="section-title reveal">Projects &amp; Internship</h3>
+    <section class="section" id="projects">
+      <div class="wrap">
+        <p class="eyebrow mono reveal">( 04 ) Work</p>
+        <h2 class="big reveal">Things I <em>built.</em></h2>
 
-        <!-- FEATURED PROJECT: RAVAN (video demo) -->
+        <!-- Featured: Ravan -->
         <article class="featured reveal">
           <div class="video-wrap">
-            <video id="ravan-video" controls preload="metadata" playsinline poster="ravan-poster.jpg">
-              <source src="ravan-demo.mp4" type="video/mp4" />
+            <video id="ravan-video" controls preload="metadata" playsinline poster="../ravan-poster.jpg">
+              <source src="../ravan-demo.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div class="video-fallback" id="video-fallback">
+            <div class="video-fallback">
               <span>▶</span>
               <p>Demo video coming soon</p>
-              <small>Add <b>ravan-demo.mp4</b> to this folder</small>
             </div>
           </div>
           <div class="featured-info">
-            <span class="badge">Featured Project</span>
-            <h4>Ravan – TallyPrime Automation App</h4>
+            <span class="pill accent small mono">Featured project</span>
+            <h3>Ravan, a TallyPrime automation app</h3>
             <p>
-              A Windows desktop application I built (Electron + React) that connects to TallyPrime and saves
-              hours of manual data entry for accountants.
+              A Windows desktop app I built with Electron and React. It connects to TallyPrime on the same
+              computer and removes hours of manual data entry for accountants.
             </p>
-            <ul class="feature-list">
-              <li>Upload sales and purchase bills (PDF / Excel) and post them to Tally with stock items</li>
-              <li>Bank statement import with bill-wise adjustment</li>
-              <li>Extract sales, purchase and stock summary data from Tally to Excel</li>
-              <li>Built-in assistant for GST, TDS and reconciliation work</li>
+            <ul class="ticks">
+              <li><b>Ravan AI:</b> GST, income-tax, TDS and Tally questions in one chat, with file attach, offline.</li>
+              <li><b>Upload Bills:</b> Excel, PDF or photo bills posted to Tally, creating missing ledgers and stock items.</li>
+              <li><b>Bank Statement:</b> import Excel, PDF or scans and post entries to Tally.</li>
+              <li><b>Tally data:</b> sales, purchase and stock summary, downloaded to Excel.</li>
             </ul>
             <div class="chips"><span>Electron</span><span>React</span><span>TallyPrime</span><span>Automation</span></div>
           </div>
         </article>
 
-        <div class="cards-3">
+        <div class="cards">
           <article class="card reveal">
-            <div class="card-icon">🛡️</div>
-            <h4>Soldier Security Device</h4>
-            <p>B.Tech project: an advanced security device for soldiers built with multiple sensors. Recognised as the "Best Project" in college.</p>
+            <span class="num mono">A</span>
+            <h3>Soldier Security Device</h3>
+            <p>B.Tech project: an advanced security device for soldiers with many sensors. Awarded "Best Project" in college.</p>
             <div class="chips"><span>IoT</span><span>Sensors</span><span>ECE</span></div>
           </article>
           <article class="card reveal">
-            <div class="card-icon">📡</div>
-            <h4>IoT Internship</h4>
-            <p>Completed an IoT internship at SV Technologies, gaining practical exposure to connected devices and testing.</p>
+            <span class="num mono">B</span>
+            <h3>IoT Internship</h3>
+            <p>Internship at SV Technologies with hands-on work on connected devices and testing.</p>
             <div class="chips"><span>IoT</span><span>Testing</span></div>
           </article>
           <article class="card reveal">
-            <div class="card-icon">🌐</div>
-            <h4>Showcase Website</h4>
-            <p>A static showcase website built with HTML, CSS and JavaScript, with a clean and responsive layout.</p>
+            <span class="num mono">C</span>
+            <h3>Showcase Website</h3>
+            <p>A static, responsive showcase website built with HTML, CSS and JavaScript.</p>
             <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
           </article>
         </div>
@@ -202,55 +239,55 @@
 
     <!-- EDUCATION -->
     <section class="section" id="education">
-      <div class="container">
-        <h3 class="section-title reveal">Education</h3>
-        <div class="cards-3">
-          <article class="card reveal">
-            <span class="date">2020 – 2024</span>
-            <h4>B.Tech – ECE</h4>
-            <p>Geethanjali Institute of Science and Technology, Nellore</p>
+      <div class="wrap">
+        <p class="eyebrow mono reveal">( 05 ) Education</p>
+        <h2 class="big reveal">How I <em>learned.</em></h2>
+
+        <div class="edu">
+          <div class="edu-row reveal">
+            <span class="mono muted">2020 – 2024</span>
+            <div><h3>B.Tech, Electronics &amp; Communication Engineering</h3><p class="muted">Geethanjali Institute of Science and Technology, Nellore</p></div>
             <strong class="score">CGPA 7.2</strong>
-          </article>
-          <article class="card reveal">
-            <span class="date">Completed 2020</span>
-            <h4>Intermediate</h4>
-            <p>NRI Junior College, Guntur</p>
+          </div>
+          <div class="edu-row reveal">
+            <span class="mono muted">Completed 2020</span>
+            <div><h3>Intermediate</h3><p class="muted">NRI Junior College, Guntur</p></div>
             <strong class="score">GPA 8.0</strong>
-          </article>
-          <article class="card reveal">
-            <span class="date">Completed 2018</span>
-            <h4>10th Class</h4>
-            <p>Sri Chaithanya E.M. High School, Nellore</p>
+          </div>
+          <div class="edu-row reveal">
+            <span class="mono muted">Completed 2018</span>
+            <div><h3>10th Class</h3><p class="muted">Sri Chaithanya E.M. High School, Nellore</p></div>
             <strong class="score">GPA 8.5</strong>
-          </article>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-    <section class="section alt" id="contact">
-      <div class="container">
-        <h3 class="section-title reveal">Get In Touch</h3>
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <p class="eyebrow mono reveal">( 06 ) Contact</p>
+        <h2 class="mega-sm reveal">Let's talk about <em>your books.</em></h2>
+
         <div class="contact-grid">
           <div class="contact-info reveal">
-            <p>I'm open to accountant opportunities. Send me a message or call me directly.</p>
-            <a class="contact-link" href="tel:+918790223061">📞 +91 87902 23061</a>
-            <a class="contact-link" href="mailto:krevanth770@gmail.com">✉️ krevanth770@gmail.com</a>
-            <a class="contact-link" href="https://wa.me/918790223061" target="_blank" rel="noopener">💬 WhatsApp</a>
-            <p class="muted">📍 Nellore, Andhra Pradesh</p>
+            <p>I'm open to accountant opportunities. Send a message or call me directly.</p>
+            <a class="contact-link" href="tel:+918790223061"><span class="mono">Phone</span>+91 87902 23061</a>
+            <a class="contact-link" href="mailto:krevanth770@gmail.com"><span class="mono">Email</span>krevanth770@gmail.com</a>
+            <a class="contact-link" href="https://wa.me/918790223061" target="_blank" rel="noopener"><span class="mono">WhatsApp</span>Chat with me</a>
           </div>
           <form id="contact-form" class="contact-form reveal" novalidate>
-            <label>Your Name
+            <label>Your name
               <input type="text" id="cf-name" placeholder="Enter your name" required />
             </label>
-            <label>Your Email
+            <label>Your email
               <input type="email" id="cf-email" placeholder="Enter your email" required />
             </label>
             <label>Message
               <textarea id="cf-message" rows="5" placeholder="Write your message" required></textarea>
             </label>
             <p id="form-status" class="form-status" role="status"></p>
-            <button type="submit" class="btn primary">Send Message</button>
+            <button type="submit" class="pill dark">Send message →</button>
           </form>
         </div>
       </div>
@@ -258,7 +295,8 @@
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Revanth Kumar K. All rights reserved.</p>
+    <p class="mono">© <span id="year"></span> Revanth Kumar K</p>
+    <p class="mono">Built with HTML, CSS &amp; JavaScript</p>
   </footer>
 
   <button id="to-top" class="to-top" aria-label="Back to top">↑</button>
